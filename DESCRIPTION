@@ -20,3 +20,5 @@ Imports:
     Rcpp,
     ambient,
     paletteer
+URL: https://github.com/djnavarro/stoneskip
+BugReports: https://github.com/djnavarro/stoneskip/issues
