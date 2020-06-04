@@ -10,3 +10,6 @@
 ``` r
 remotes::install_github("djnavarro/stoneskip")
 ```
+
+Inspired by [watercolors](https://github.com/aschinchon/watercolors) by
+[Antonio Sánchez Chinchón](https://github.com/aschinchon)
