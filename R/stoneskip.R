@@ -73,12 +73,12 @@ stoneskip <- function(seed = 1, filename = NULL, grains = 1000, pixels = 5000, s
   # write to an image file --------------------------------------------------
 
   cat("rendering image...\n")
-  rast <- as.raster(matrix(palette[output], grains, grains))
-  png(filename, pixels, pixels)
-  op <- par(mar=c(0,0,0,0))
+  rast <- grDevices::as.raster(matrix(palette[output], grains, grains))
+  grDevices::png(filename, pixels, pixels)
+  op <- graphics::par(mar=c(0,0,0,0))
   plot(rast)
-  dev.off()
-  par(op)
+  grDevices::dev.off()
+  graphics::par(op)
 
 
   # invisibly return the output matrix --------------------------------------
